@@ -1,0 +1,65 @@
+.main-content {
+    position: relative;
+
+    .thankyou-img    {
+        width: 100%;
+    }
+
+    .thankyou {
+        .breadcrumb {
+            position: absolute;
+            top: 0;
+        }
+
+        .thankyou-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 711px;
+            height: 328px;
+            background: #FFFFFF;
+
+            ul {
+                @include flexcolum;
+                // justify-content: space-between;
+                height: 100%;
+                padding: 30px 40px;
+
+                li {
+                    img {
+                        width: 152px;
+                        height: 152px;
+                    }
+
+                    p {
+                        font-family: 'El Messiri';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 32px;
+                        line-height: 50px;
+                        text-align: center;
+                        color: #146060;
+                        margin-bottom: 20px;
+                    }
+
+                    button {
+                        padding: 10px 65px;
+                        background: #146060;
+                        border-radius: 5px;
+                        border: none;
+                        font-family: 'Dosis';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-align: center;
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+}

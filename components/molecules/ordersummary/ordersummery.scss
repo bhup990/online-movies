@@ -1,0 +1,162 @@
+.ordersummary {
+    width: 320px;
+    height: auto;
+    padding: 11px 20px;
+    background: $ColorWhite;
+    font-family: $BaseFontFamily;
+    color: $ColorBlack;
+    // margin-bottom: 141px;
+
+    h5.header {
+        font-family: $BaseFontFamily;
+        padding: 0;
+        margin: 0;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        color: $Maincolor;
+    }
+
+    hr {
+        background: #F1F1F1;
+        margin: 9.5px 0 20px 0px;
+    }
+
+    ul {
+        li {
+            @include space_between;
+            padding-bottom: 20px;
+
+            span {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                letter-spacing: 0.05em;
+                text-transform: capitalize;
+            }
+
+            &:first-child {
+                span {
+                    font-weight: 700;
+                }
+            }
+
+            &.promo {
+                span {
+                    @include space_between;
+                    text-transform: uppercase;
+                    font-weight: 600;
+
+                    &:last-child {
+                        color: $Maincolor;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        border-bottom: 1px solid $Maincolor;
+                        padding-bottom: 3px;
+                    }
+
+                    img {
+                        transform: rotate(270deg);
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+
+            &.remove-promo {
+                align-items: baseline;
+
+                p {
+                    @include flexcolum;
+                    align-items: baseline;
+
+                    span {
+                        font-family: $BaseFontFamily;
+                        font-weight: 700;
+                        font-size: 13px;
+                        line-height: 16px;
+                        text-align: center;
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                        color: $Maincolor;
+                        border-bottom: 1px solid $Maincolor;
+                        padding-bottom: 3px;
+                        cursor: pointer;
+                    }
+                }
+
+                span {
+                    font-family: $Avernir;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 19px;
+                    text-align: center;
+                    letter-spacing: 0.05em;
+                    color: $ColorBlack;
+                }
+            }
+        }
+    }
+
+    .total-sec {
+        @include space_between;
+
+        span {
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: capitalize;
+            color: $Maincolor;
+        }
+    }
+
+    .checkoutBtn {
+        @include space_between;
+        justify-content: center;
+        margin-top: 21px;
+
+        button {
+            padding: 15px 32px;
+            font-family: 'Dosis';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 16px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            border: none;
+            background: $Maincolor;
+            border-radius: 5px;
+            transition: all .25s ease;
+
+            &:hover{
+                opacity: 0.5;
+            }
+
+        }
+    }
+}
+
+.continuelink {
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+
+    span {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $Maincolor;
+        text-decoration: underline;
+    }
+}

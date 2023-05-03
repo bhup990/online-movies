@@ -1,0 +1,116 @@
+footer {
+    background: $Maincolor;
+    padding: 40px 20px 20px 20px;
+
+    .footer_wrapper {
+        @include space_between;
+        align-items: end;
+
+        .footer_logo {
+            display: flex;
+            flex-direction: column;
+
+            .social_media {
+                display: flex;
+                justify-content: space-evenly;
+                padding-top: 20px;
+            }
+        }
+
+        .footer_links {
+            display: flex;
+            justify-content: space-between;
+            width: 385px;
+            height: 170px;
+
+            ul {
+                li {
+                    padding-bottom: 12px;
+
+                    a {
+                        line-height: 26px;
+                        letter-spacing: 0.05em;
+                        color: #FFFFFF;
+                        font-size: 1rem;
+                        font-weight: 200;
+                    }
+                }
+            }
+        }
+
+        .footer_email {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 164px;
+            width: 390px;
+            position: relative;
+
+            h6 {
+                font-family: 'El Messiri';
+                font-size: 32px;
+                text-align: center;
+                letter-spacing: 0.05em;
+                color: #FFFFFF;
+            }
+
+            p {
+                font-weight: 200;
+                font-size: 14px;
+                line-height: 23px;
+                text-align: center;
+                letter-spacing: 0.05em;
+                color: #FFFFFF;
+            }
+
+            .emailWrapper {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    padding: 10px;
+                    border-radius: 5px;
+                    border: none;
+                    outline: none;
+                    line-height: 20px;
+                    letter-spacing: 0.05em;
+                    color: $ColorBlack;
+                    font-family: $BaseFontFamily;
+                    padding-right: 35px;
+                }
+            }
+
+            button {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background: transparent;
+                border: none;
+                padding: 8px;
+                outline: none;
+            }
+        }
+    }
+
+    .copy-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 60px;
+        p{
+            font-family: $BaseFontFamily;
+            font-size: $HeadingH6;
+            line-height: 26px;
+            color: $ColorWhite;
+            letter-spacing: 0.05em;
+
+            b{
+                font-weight: 700;
+
+                a{
+                    color: $ColorWhite;
+                }
+            }
+        }
+    }
+}

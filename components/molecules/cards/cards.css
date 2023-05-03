@@ -1,0 +1,28 @@
+.cards .cards-body {
+  position: relative;
+}
+.cards .cards-body .wishlist {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 30px;
+  height: 35px;
+}
+.cards .cards-body .wishlist svg {
+  font-size: 23px;
+  color: #fff;
+  transition: font-size 0.2s ease;
+}
+.cards .cards-body .wishlist svg:hover {
+  font-size: 30px;
+}
+.cards .cards-body .wishlist .wishlist-icon {
+  width: 20px !important;
+  height: 20px !important;
+}
+.cards .cards-body .wishlist .displayblk {
+  display: block;
+}
+.cards .cards-body .wishlist .displaynone {
+  display: none;
+}/*# sourceMappingURL=cards.css.map */

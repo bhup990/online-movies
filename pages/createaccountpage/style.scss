@@ -1,0 +1,316 @@
+.create-account {
+    height: 95.1vh;
+
+    .bg-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 525px;
+        background: $ColorWhite;
+        padding: 5px 33px;
+
+        h5 {
+            font-family: $Elmessiri;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 50px;
+            color: $Maincolor;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        .fields-imp {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 25px;
+            letter-spacing: 0.05em;
+            opacity: 0.5;
+            text-align: right;
+        }
+
+        form {
+            .form-group {
+                display: flex;
+                flex-direction: column;
+                width: 210px;
+                height: 71px;
+                margin-bottom: 10px;
+
+                .mobile {
+                    display: flex;
+
+                    select {
+                        margin-right: 5px;
+                        appearance: none;
+                        background: url('../../assets/images/icons/down-arr.svg') no-repeat;
+                        background-position: right 2px top 17px;
+                        width: 55px;
+                        background-size: 10px;
+                        padding: 7px;
+                        border: 0.5px solid #E3E1E0;
+                    }
+                }
+
+                label {
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 26px;
+                    letter-spacing: 0.05em;
+                    color: $ColorBlack;
+                }
+
+                input {
+                    width: 100%;
+                    border: 0.5px solid #E3E1E0;
+                    border-radius: 5px;
+                    height: 40px;
+                    outline: none;
+                    padding: 10px;
+                }
+
+                &.pswd {
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                        right: 10px;
+                        top: 40px;
+                        cursor: pointer;
+                    }
+
+                }
+
+                select {
+                    padding: 0 10px;
+                    border: 0.5px solid #E3E1E0;
+                    border-radius: 5px;
+                    height: 40px;
+                    background: url('../../assets/images/icons/down-arr.svg') no-repeat;
+                    background-position: right 6px top 17px;
+                    appearance: none;
+                    background-size: 12px;
+                    outline: none;
+                }
+            }
+
+            .details-form {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-bottom: 40px;
+            }
+
+            h6 {
+                font-weight: 600;
+                font-size: 1rem;
+                line-height: 20px;
+                letter-spacing: 0.05em;
+
+                /* Filter */
+
+                color: $ColorBlack;
+            }
+
+            .shop-info {
+                .form-group {
+                    width: 100%;
+                }
+            }
+
+            button.submitBtn {
+                background: $Maincolor;
+                border-radius: 5px;
+                width: 100%;
+                border: none;
+                padding: 10px;
+                font-weight: 700;
+                font-size: 1rem;
+                text-align: center;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: $ColorWhite;
+            }
+
+            .term-policy {
+                font-weight: 400;
+                font-size: 12.5px;
+                line-height: 10px;
+                letter-spacing: 0.03em;
+                color: $ColorBlack;
+                padding-top: 10px;
+
+                a {
+                    color: $Maincolor;
+                }
+            }
+
+            .login-link {
+
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: 0.05em;
+                color: $ColorBlack;
+                text-align: center;
+                padding-top: 30px;
+
+                a {
+                    font-weight: 700;
+                    font-size: 1rem;
+                    color: $Maincolor;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .pswd-secure {
+            ul {
+                @include displayflx;
+
+                li {
+                    width: 20px;
+                    height: 3px;
+                    background: $Maincolor;
+                    border-radius: 10px;
+                    margin-right: 5px;
+                }
+
+                span.secure-msg {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 10px;
+                    letter-spacing: 0.05em;
+                    color: $ColorBlack;
+                    margin-left: 3px;
+
+                }
+            }
+        }
+    }
+
+    .login-footer {
+        background: $Maincolor;
+        text-align: center;
+        padding: 10px;
+        position: absolute;
+        border: 0;
+        width: 100%;
+
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 26px;
+            letter-spacing: 0.05em;
+            color: $ColorWhite;
+
+            a {
+                color: $ColorWhite;
+            }
+        }
+    }
+}
+
+.modal {
+    .policyandterms {
+        max-width: 75%;
+        width: 50%;
+
+        .modal-content {
+            border-radius: 0;
+
+            .modal-header {
+                background: $Maincolor;
+                border-radius: 0;
+
+                .modal-title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+
+                    h4 {
+                        font-family: $Elmessiri;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 32px;
+                        line-height: 50px;
+                        color: $ColorWhite;
+                        margin-bottom: 0;
+                    }
+
+                    img {
+                        filter: brightness(10.5);
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .modal-body {
+                padding: 0 1rem 1rem 1rem;
+
+                .contents {
+                    height: 550px;
+                    overflow-y: auto;
+                    padding-right: 15px;
+
+                    h5 {
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 30px;
+                        letter-spacing: 0.05em;
+                        color: $ColorBlack;
+                        margin-top: 20px;
+                    }
+
+                    p {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        letter-spacing: 0.05em;
+                        color: $ColorBlack;
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                        width: 5px;
+                        background-color: $Maincolor;
+                        height: 62px;
+                        border-radius: 10px;
+                    }
+
+                    &::-webkit-scrollbar-track {
+                        width: 5px;
+                        background-color: #E3E1E0;
+                        border-radius: 10px;
+                        margin-top: 10px;
+                    }
+
+                    &::-webkit-scrollbar {
+                        width: 5px;
+                        background-color: transparent;
+                    }
+
+                    ul {
+                        li {
+                            list-style: inside;
+                            font-family: $BaseFontFamily;
+                            font-weight: 400;
+                            font-size: 1rem;
+                            line-height: 26px;
+                            letter-spacing: 0.05em;
+                            color: $ColorBlack;
+                            margin-bottom: 5px;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

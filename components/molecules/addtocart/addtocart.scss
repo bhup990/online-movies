@@ -1,0 +1,267 @@
+.addtocart-wrapper {
+    display: none;
+    font-family: $BaseFontFamily;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    width: 100vw;
+    height: 100%;
+    animation: openright 1s ease forwards;
+
+    @keyframes openright {
+        0% {
+            width: 0vw;
+        }
+
+        100% {
+            width: 100vw;
+        }
+    }
+
+    .overlay {
+        background: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 100%;
+    }
+
+    .mycart {
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100vw;
+        max-width: 550px;
+        background: $ColorWhite;
+
+        animation: couponcart 1s ease-in-out forwards;
+
+            @keyframes couponcart {
+                0% {
+                    width: 0vw
+                }
+
+                100% {
+                    width: 100vw
+                }
+            }
+
+        h5 {
+            padding: 20px 15px;
+            font-family: $Elmessiri;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 50px;
+            color: $ColorWhite;
+            background: $Maincolor;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0;
+
+            img {
+                cursor: pointer;
+            }
+        }
+
+        .selected-product {
+            display: flex;
+            padding: 20px;
+            border: 1px solid #F1F1F1;
+
+            img {
+                width: 100px;
+                height: 89.03px;
+                margin-right: 20px;
+                object-fit: cover;
+            }
+
+            .product-info {
+                width: 100%;
+
+                p {
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 26px;
+                    letter-spacing: 0.05em;
+                }
+
+                h6 {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                    letter-spacing: 0.05em;
+                    color: $ColorBlack;
+                }
+
+                .selected-color {
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        font-weight: 500;
+                        font-size: 13px;
+                        line-height: 16px;
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: 0.05em;
+                        color: $ColorBlack;
+                        margin-right: 9px;
+                    }
+
+                    .color-circle {
+                        width: 15px;
+                        height: 15px;
+                        background: $ColorBlack;
+                        display: inherit;
+                        border-radius: 50px;
+                    }
+                }
+
+                .size {
+                    small {
+                        font-weight: 500;
+                        font-size: 13px;
+                        line-height: 1rem;
+                        text-align: center;
+                        letter-spacing: 0.05em;
+                        color: $ColorBlack;
+                    }
+
+                    .incre-total {
+                        margin-bottom: 10px;
+                        .size-qty {
+                            @include space_between;
+
+                            .incr-dcr {
+                                @include displayflx;
+
+                                span {
+                                    font-family: $Avernir;
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 26px;
+                                    letter-spacing: 0.05em;
+                                    color: #646363;
+                                }
+
+                                .control-btn {
+                                    @include space_between;
+                                    width: 168px;
+                                    background: $ColorWhite;
+                                    border: 1px solid $BorderColor;
+                                    border-radius: 5px;
+                                    padding: 4px 5px;
+
+                                    .border-line {
+                                        button {
+                                            font-weight: 400;
+                                            font-size: 20px;
+                                            line-height: 20px;
+                                            color: $Maincolor;
+                                            background: transparent;
+                                            border: none;
+                                        }
+
+                                        input {
+                                            border: none;
+                                            width: 40px;
+                                            text-align: center;
+                                            outline: none;
+                                        }
+
+                                        /* Chrome, Safari, Edge, Opera */
+                                        input::-webkit-outer-spin-button,
+                                        input::-webkit-inner-spin-button {
+                                            -webkit-appearance: none;
+                                            margin: 0;
+                                        }
+
+                                        /* Firefox */
+                                        input[type=number] {
+                                            -moz-appearance: textfield;
+                                        }
+                                    }
+                                }
+                            }
+
+                            span.money-sign {
+                                font-family: $Avernir;
+                                font-weight: 400;
+                                font-size: 1rem;
+                                line-height: 19px;
+                                text-align: center;
+                                letter-spacing: 0.05em;
+                                color: $ColorBlack;
+                                margin-left: 15px;
+                            }
+
+                            .dlt {
+                                @include displayflx;
+
+                                span {
+                                    font-family: $Avernir;
+                                    font-weight: 400;
+                                    font-size: 1rem;
+                                    line-height: 19px;
+                                    text-align: center;
+                                    letter-spacing: 0.05em;
+                                    color: $ColorBlack;
+                                }
+
+                                img {
+                                    width: 12px;
+                                    height: 14px;
+                                    margin-left: 15px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .checkout-process {
+            @include space_between;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 30px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+
+            .btns {
+                button {
+                    padding: 11px 18px;
+                    border: 0.5px solid $Maincolor;
+                    border-radius: 5px;
+                    background: transparent;
+                    font-weight: 700;
+                    font-size: 13px;
+                    line-height: 16px;
+                    text-align: center;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: $Maincolor;
+                    margin-right: 19px;
+                }
+
+                .checkout-btn {
+                    background-color: $Maincolor;
+                    color: $ColorWhite;
+                }
+            }
+
+            span {
+                font-family: $Avernir;
+                font-weight: 900;
+                font-size: 20px;
+                line-height: 25px;
+                text-align: center;
+                color: $ColorBlack;
+            }
+        }
+    }
+}

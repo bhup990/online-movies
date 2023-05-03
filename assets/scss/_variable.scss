@@ -1,0 +1,41 @@
+// font-family: 'Dosis', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+// font-family: 'El Messiri', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'avernir';
+    src: url('../fonts/avenir.woff2');
+    font-style: normal;
+}
+
+
+// fonts family variable 
+$BaseFontFamily:'Dosis';
+$Elmessiri: 'El Messiri';
+$Avernir: 'avernir';
+
+// Colors variable 
+$GlobalColor:#F5F5F5;
+$Maincolor:#146060;
+$ColorBlack : #0F0F0F;
+$ColorWhite:#FFFFFF;
+$CreamColor:#D8B9AD;
+$LightGreen:#D7F0D3;
+$background-color: #fcf8f7;
+$BorderColor : #E3E1E0;
+
+// Font Size variable 
+$TextSmall:0.75rem; //12px
+$TextFont:0.813rem; //13px
+$BaseFont:1rem; //16px
+$HeadingH2:5rem; //80px
+$HeadingH3:2.5rem; //40px
+$HeadingH4:1.875rem; //30px
+$HeadingH5:1.25rem; //20px
+$HeadingH6:0.875rem; //14px
+$PageTitle:2rem; //32px
+
+// Translation variable 
+$DefaultTransition: all 0.5s ease-in-out;
+$letterSpacing: 0.05em;

@@ -1,0 +1,245 @@
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+    background: $ColorWhite;
+    font-family: $BaseFontFamily;
+    color: $ColorBlack;
+
+    .search-overlay {
+        display: none;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background: #0F0F0F;
+        opacity: 0.3;
+        z-index: 9;
+    }
+
+    .offer_adv {
+        @include displayflx;
+        position: relative;
+        background-color: $Maincolor;
+
+        p {
+            color: $ColorWhite;
+            padding: 8px 0;
+            letter-spacing: 0.2px;
+
+            span {
+                font-weight: 700;
+                color: $ColorWhite;
+            }
+        }
+
+        button {
+            position: absolute;
+            border: none;
+            background: none;
+            color: $ColorWhite;
+            padding: 0;
+            right: 5px;
+            font-size: 1.5rem;
+            top: 0;
+            outline: none;
+        }
+    }
+
+    .nav_header {
+        padding: 10px;
+        padding-bottom: 0;
+
+        .logo_search {
+            @include displayflx;
+            position: relative;
+
+            ul {
+                display: flex;
+                justify-content: right;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                right: 0;
+
+                li {
+                    position: relative;
+                    padding: 0 10px;
+
+                    &:last-child {
+                        padding-right: 0;
+                        display: flex;
+                        align-items: self-end;
+
+                        a {
+                            font-weight: 500;
+                            font-size: 16.5px;
+                            line-height: 20px;
+                            letter-spacing: 0.05em;
+                            color: $ColorBlack;
+                        }
+                    }
+
+                    &:first-child {
+                        z-index: 99;
+                    }
+
+                    .searchbox {
+                        border: none;
+                        width: 180px;
+                        height: 26px;
+                        border-radius: 5px;
+                        outline: none;
+                        padding: 5px;
+                        color: #0F0F0F;
+                        font-size: 13px;
+                        font-weight: 500;
+                        letter-spacing: 0.5px;
+
+                    }
+
+                    .search-icon {
+                        position: absolute;
+                        right: 15px;
+                        top: 4px;
+
+                    }
+
+                    .addcartnumbers {
+                        @include displayflx;
+                        font-family: $Avernir;
+                        font-weight: 350;
+                        font-size: 12px;
+                        line-height: 10px;
+                        text-align: center;
+                        color: $ColorWhite;
+                        background: $Maincolor;
+                        position: absolute;
+                        padding: 5px;
+                        border-radius: 50%;
+                        right: 2px;
+                        top: -8px;
+                    }
+
+                }
+            }
+        }
+
+        .navbar {
+            justify-content: center;
+            padding-bottom: 0;
+
+            .navbar-nav {
+                @include displayflx;
+                margin-top: 13px;
+                flex-direction: row;
+
+                .sale-offer {
+                    a {
+                        font-weight: 500;
+                        font-size: $BaseFont;
+                        line-height: 26px;
+                        letter-spacing: 0.05em;
+                        color: #FF0101;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .navbar-item {
+                    padding: 10px 24px;
+
+                    a {
+                        color: $ColorBlack;
+                        padding-bottom: 0;
+                        font-weight: 600;
+                        transition: all 0.25s ease-in-out;
+
+                        &:hover {
+                            padding-bottom: 10px;
+                            font-weight: 600;
+                            color: #865437;
+                            border-bottom: 2px solid #865437;
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
+
+    .mega-menu {
+        position: absolute;
+        height: 0;
+        background: #F8F8F8;
+        width: 100%;
+        z-index: 9;
+        transition: all 0.5s ease-in-out;
+
+        &.hide-sub-menu {
+            display: none;
+            height: 0;
+        }
+
+        &.show-sub-menu {
+            display: block;
+            height: 495px;
+        }
+
+        .mega-menu-content {
+            display: flex;
+            width: 745px;
+            height: 392px;
+            margin: auto;
+            justify-content: space-between;
+            padding-top: 35px;
+
+            .links {
+                .collections {
+                    display: flex;
+                }
+
+                ul {
+
+                    h5 {
+                        font-size: 1rem;
+                        line-height: 20px;
+                        font-weight: 700;
+                    }
+
+                    li {
+                        font-size: 1rem;
+                        line-height: 36px;
+                        font-weight: 500;
+                        margin-right: 80px;
+
+                        a {
+                            color: $ColorBlack;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mega-menu-image {
+            img {
+                width: 230px;
+                height: 300px;
+            }
+        }
+    }
+
+    .displayblk {
+        @include displayblock;
+    }
+
+    .displaynone {
+        @include displaynone;
+    }
+
+    .displayflx {
+        @include displayflx
+    }
+
+
+}

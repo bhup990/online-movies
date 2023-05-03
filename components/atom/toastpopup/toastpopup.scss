@@ -1,0 +1,49 @@
+.toastpopup {
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 9;
+    background: #098707;
+    padding: 12px 47px;
+    border-radius: 30px;
+    transition: all 1s ease-in-out;
+    animation: toastpop 2s;
+
+    @keyframes toastpop {
+        0% {
+            transform: translate(-50%, -60%);
+        }
+
+        25% {
+            transform: translate(-50%, -40%);
+        }
+
+        // 50% {
+        //     transform: translate(-50%, -54%);
+        // }
+
+        // 75% {
+        //     transform: translate(-50%, -58%);
+        // }
+
+        100% {
+            transform: translate(-50%, -60%);
+        }
+    }
+
+    .popup {
+        @include displayflx;
+
+        span {
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 16px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: $ColorWhite;
+            margin-left: 8px;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.addtocart-wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+}
+.addtocart-wrapper .overlay {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+}
+.addtocart-wrapper .mycart {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 550px;
+  background: #FFFFFF;
+}
+.addtocart-wrapper .mycart h5 {
+  padding: 20px 15px;
+  font-family: "El Messiri";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 50px;
+  color: #FFFFFF;
+  background: #146060;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=addtocart.css.map */

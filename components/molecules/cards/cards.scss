@@ -1,0 +1,39 @@
+.cards {
+   
+    .cards-body {
+        position: relative;
+
+        .wishlist {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            width: 30px;
+            height: 35px;
+
+            svg {
+                font-size: 23px;
+                color: #fff;
+                transition: font-size .2s ease;
+
+                &:hover {
+                    font-size: 30px;
+                }
+
+            }
+
+            .wishlist-icon {
+                width: 20px !important;
+                height: 20px !important;
+            }
+
+            .displayblk {
+                display: block;
+            }
+
+            .displaynone {
+                display: none;
+            }
+        }
+    }
+
+}

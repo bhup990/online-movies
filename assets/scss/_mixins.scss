@@ -1,0 +1,72 @@
+@import '_variable.scss';
+
+@mixin displayflx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin space_between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexcolum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin displayblock {
+    display: block !important;
+}
+
+@mixin displaynone {
+    display: none !important;
+}
+
+@mixin text-style($size: $Basefont, $weight: 400, $lineHeight: 26px, $color: $ColorBlack, $letter-spacing: 0.05em) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineHeight;
+    color: $color;
+    letter-spacing: $letter-spacing;
+}
+
+@mixin btnOutline {
+    border: 0.5px solid $Maincolor;
+    width: 110px;
+    height: 40px;
+    border-radius: 5px;
+    line-height: 16px;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: $Maincolor;
+    font-size: $TextFont;
+    font-weight: 700;
+    letter-spacing: $letterSpacing;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+@mixin btnOutlineHover {
+    border: 0.5px solid $Maincolor;
+    width: 110px;
+    height: 40px;
+    border-radius: 5px;
+    line-height: 16px;
+    background-color: $Maincolor;
+    text-transform: uppercase;
+    color: $ColorWhite;
+    font-size: $TextFont;
+    font-weight: 700;
+    letter-spacing: $letterSpacing;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
